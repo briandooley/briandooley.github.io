@@ -18,7 +18,7 @@ This guide covers the installation the ownCloud server on a virtualbox instance 
 # Installation of ownCloud server
 1. Obtain an image to run on virtualBox.  Open [https://owncloud.com/download/](https://owncloud.com/download/) in your browser and download the image via the "DOWNLOAD" button in the "Download ownCloud Server" section.
 
-You will be expected to register with ownCloud at this stage in the process.  Enter your details, making sure that you submit a _valid email address_ (this will be used to send your license to) and also ensure that the Download version that you select is the _ownCloud Server Appliance (VirtualBox)_ version.
+You will be expected to register with ownCloud at this stage in the process.  Enter your details, making sure that you submit a **valid email address** (this will be used to send your license to) and also ensure that the Download version that you select is the _ownCloud Server Appliance (VirtualBox)_ version.
 
 ![Download details](../../../../images/downloaddetails.png)
 
@@ -34,7 +34,7 @@ Click **Continue** to proceed to the **Appliance Settings** screen.
 
 6. As this is a first installation, you will be asked several questions for configuration purposes.  Enter your preferred to language and city and click *NEXT*
 
-7. In the *Domain and network configuration* section, make sure that *Obtain IP address automatically (DHCP)* box is checked, leave the remaning field with their default values and click *NEXT*
+7. In the *Domain and network configuration* section, make sure that *Obtain IP address automatically (DHCP)* box is checked, leave the remaning field with their default values.  Note the value of the *IPv4/IPv6 address* and click *NEXT*
 
 8. A warning message will appear listing servers that cannot be reached.  These will be configured later so, for the moment, press *Continue without access to the repository servers*
 
@@ -46,7 +46,24 @@ Click **Continue** to proceed to the **Appliance Settings** screen.
 
 12.  You are all set.  Click on *Configure System* and, when the setup has completed, click *FINISH*.
 
-The server is now configured.
+The server has now been installed.  Proceed immediately to the next step
+
+# Setting up ownCloud server
+Start up a session in your web browser and navigate to the ip address that was set up in step 7 of the previous section.  This address will also be displayed just after the server has been installed.  i.e.
+
+![server start](../../../../images/server_start.png)
+
+You will then be asked to activate your license, which will have been sent to you, via email, in a ucs.license file when you originally registered with ownCloud (see step 1 of the *Installation of ownCloud server* section).  Check your inbox for the email and detach the license file in a secure location.
+
+Click on *Upload Licence Data* and then click on *FINISH* when the "Activation Successful" message is displayed.  You will now be directed to the welcome screen.  Take note of the administrator username and password that is displayed there.  You may also be asked a couple of survey questions.  Answer them as you see fit and click finish.
+
+
+
+
+
+
+
+
 
 
 
