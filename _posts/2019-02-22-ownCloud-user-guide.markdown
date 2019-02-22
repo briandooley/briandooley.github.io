@@ -1,28 +1,56 @@
 ---
 layout: post
-title:  "ownCloud user guide"
+title:  "ownCloud Quickstart Guide"
 date:   2019-02-20 15:40:15 +0000
 categories: 
 ---
 
 ## Introduction
-The purpose of this document is to guide users through the installation of ownCloud server, adding users and accessing the ownCloud server via a client application in a short timeframe.  This document is written specifically for installation on an Apple Mac running OSX High Sierra version 10.13.6 or higher.  Please note that this document details an installation for demonstration purposes only.  This method should not be used for a production installation.
+The purpose of this document is to guide users through the installation of ownCloud server, adding users and accessing the ownCloud server via a client application in a short timeframe.  This document is written specifically for installation on an Apple Mac running OSX High Sierra version 10.13.6 or higher.  Note that this document details an installation for demonstration purposes only.  This method must not be used for a production installation.
 
 ## What is ownCloud?
 ownCloud allows individual users and enterprise organisations to host their documents within a on-premise, secure cloud infrastructure that is entirely within the owners control.  In terms of architecture, the software utilises a client-server modal, where documents and other software assets are stored on servers and can be accessed through multiple client applications. 
 
 ## Installed Prerequisites
-In this guide, we are installing the ownCloud server on a virtualbox instance since  this allows a simple and quick installation for demonstration purposes.  Virtualbox version 5.2.26 for OSX is available [here](https://download.virtualbox.org/virtualbox/6.0.4/VirtualBox-6.0.4-128413-OSX.dmg) 
+This guide covers the installation the ownCloud server on a virtualbox instance since this allows a simple and quick installation for demonstration purposes.  Virtualbox version 5.2.26 for OSX is available [here](https://download.virtualbox.org/virtualbox/6.0.4/VirtualBox-6.0.4-128413-OSX.dmg) 
 
 ## Method
 # Installation of ownCloud server
-First, we need to grab the image to run on virtualBox.  Open [https://owncloud.com/download/](https://owncloud.com/download/) in your browser and download the image via the "DOWNLOAD" button in the "Download ownCloud Server" section.
+1. Obtain an image to run on virtualBox.  Open [https://owncloud.com/download/](https://owncloud.com/download/) in your browser and download the image via the "DOWNLOAD" button in the "Download ownCloud Server" section.
 
-![Download](../../../../images/download.png)
-
-You will be expected to register with ownCloud at this stage in the process.  Enter your details, making sure that you submit a _valid email address_ (this will be used to send your license to) and also that the Download version that you select is the _ownCloud Server Appliance (VirtualBox)_ version.
+You will be expected to register with ownCloud at this stage in the process.  Enter your details, making sure that you submit a _valid email address_ (this will be used to send your license to) and also ensure that the Download version that you select is the _ownCloud Server Appliance (VirtualBox)_ version.
 
 ![Download details](../../../../images/downloaddetails.png)
+
+2. When the image has downloaded, launch virtualBox and select **File** - **Import Appliance**.  Click on the folder icon and browser to select your image.
+
+Click **Continue** to proceed to the **Appliance Settings** screen.
+
+3. Leave the settings at their defaults and press **Import**.
+
+4. Press **Agree** to agree to the terms and conditions of the image license agreement and the import will commence.
+
+5. When the import has completed, select the *UCS 4.3-with-ownCloud* image in the left hand column in virtualBox and press *Start*.  The server will present 3 options.  Allow the boot process to proceed with the *start owncloud* option by default.
+
+6. As this is a first installation, you will be asked several questions for configuration purposes.  Enter your preferred to language and city and click *NEXT*
+
+7. In the *Domain and network configuration* section, make sure that *Obtain IP address automatically (DHCP)* box is checked, leave the remaning field with their default values and click *NEXT*
+
+8. A warning message will appear listing servers that cannot be reached.  These will be configured later so, for the moment, press *Continue without access to the repository servers*
+
+9. For the *domain setup*, leave the *Manage users and permissions directly on the system* option selected and click *NEXT*.
+
+10. In the *Account Information* section, enter your organisation name, a valid email address and a strong password.
+
+11. In the *Host Settings* section, leave the default values and click *NEXT*.
+
+12.  You are all set.  Click on *Configure System* and, when the setup has completed, click *FINISH*.
+
+The server is now configured.
+
+
+
+
 
 
 
