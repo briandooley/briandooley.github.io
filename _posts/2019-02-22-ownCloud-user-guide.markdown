@@ -6,7 +6,7 @@ categories:
 ---
 
 ## Introduction
-The purpose of this document is to guide users through the installation of ownCloud server, adding users and accessing the ownCloud server via a client application in a short timeframe.  This document is written specifically for installation on an Apple Mac running OSX High Sierra version 10.13.6 or higher.  Note that this document details an installation for demonstration purposes only.  This method must not be used for a production installation.
+The purpose of this document is to guide users through the installation of ownCloud server, adding users and accessing the ownCloud server using a client application in a short timeframe.  This document is written specifically for installation on an Apple Mac running OSX High Sierra version 10.13.6 or higher.  Note that this document details an installation for demonstration purposes only.  This method must not be used for a production installation.
 
 ## What is ownCloud?
 ownCloud allows individual users and enterprise organisations to host their documents within a on-premise, secure cloud infrastructure that is entirely within the owners control.  In terms of architecture, the software utilises a client-server modal, where documents and other software assets are stored on servers and can be accessed through multiple client applications. 
@@ -16,7 +16,7 @@ This guide covers the installation the ownCloud server on a virtualbox instance 
 
 ## Method
 # Installation of ownCloud server
-1. Obtain an image to run on virtualBox.  Open [https://owncloud.com/download/](https://owncloud.com/download/) in your browser and download the image via the "DOWNLOAD" button in the "Download ownCloud Server" section.
+1. Obtain an image to run on virtualBox.  Open [https://owncloud.com/download/](https://owncloud.com/download/) in your browser and download the image by clicking the "DOWNLOAD" button in the "Download ownCloud Server" section.
 
 You will be expected to register with ownCloud at this stage in the process.  Enter your details, making sure that you submit a **valid email address** (this will be used to send your license to) and also ensure that the Download version that you select is the _ownCloud Server Appliance (VirtualBox)_ version.
 
@@ -53,48 +53,26 @@ Start up a session in your web browser and navigate to the ip address that was s
 
 ![server start](../../../../images/server_start.png)
 
-You will then be asked to activate your license, which will have been sent to you, via email, in a ucs.license file when you originally registered with ownCloud (see step 1 of the *Installation of ownCloud server* section).  Check your inbox for the email and detach the license file in a secure location.
+You will be asked to activate your license, which will have been sent to you, by email, in a ucs.license file when you originally registered with ownCloud (see step 1 of the *Installation of ownCloud server* section).  Check your inbox for the email and detach the license file in a secure location.
 
 Click on *Upload Licence Data* and then click on *FINISH* when the "Activation Successful" message is displayed.  You will now be directed to the welcome screen.  Take note of the administrator username and password that is displayed there.  You may also be asked a couple of survey questions.  Answer them as you see fit and click finish.
 
+# Adding a user account
+On the main screen, click on the *Users* block.  You will be brough to the *Users* section which will list one user (Administrator)
+Click *Add*
+Enter the first name and last name of the user and the desired username.  Click *NEXT*
+Give the user a strong password and click *Create User*
 
+# Connect to ownCloud using a web browser
+In an incognito/private browser window, navigate to the ip address that was set up in step 7 of the *Installation of ownCloud server* section.  You will be presented with several options.
 
+![options](../../../../images/options.png)
 
+Select *ownCloud* under *Applictions*
+Enter the username and password that was created in the *Adding a user account* section.
+You will then be presented with your documents contained within ownCloud.  
 
+![final screen](../../../../images/finally.png)
 
+Now you are all set.  To find out more about using ownCloud, go to our [documentation section](https://doc.owncloud.com/server/index.html)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-![Image of Yak](../../../../images/2001-1.jpg)
-
-
-You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
