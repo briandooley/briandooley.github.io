@@ -9,10 +9,11 @@ categories:
 The purpose of this document is to guide users through the installation of ownCloud server, adding users and accessing the ownCloud server using a client application in a short timeframe.  This document is written specifically for installation on an Apple Mac running OSX High Sierra version 10.13.6 or higher.  Note that this document details an installation for demonstration purposes only.  This method must not be used for a production installation.
 
 ## What is ownCloud?
-ownCloud is a system that allows individual users and enterprise organisations to host their documents within a on-premise, secure cloud infrastructure that is entirely within the owners control.  In terms of architecture, the software utilises a client-server modal, where documents and other software assets are stored on servers and can be accessed through multiple client applications.
+ownCloud is a service that provides cloud storage, file synchronization, personal cloud, and client software applications for individual users and enterprise organisations within an on-premise, secure cloud infrastructure that is within the owners control.  
+Architecturally, the software utilises a client-server model, where documents and other software assets are stored on servers and can be accessed through multiple client applications.
 
 ## Installed Prerequisites
-For the purposes of this installation, the ownCloud server will run on Oracle VM VirtualBox, a free and open-source hosted hypervisor.  A Virtualbox instance will allow a simple and quick installation for demonstration purposes.  Virtualbox version 5.2.26 for OSX is available [here](https://download.virtualbox.org/virtualbox/6.0.4/VirtualBox-6.0.4-128413-OSX.dmg).
+For the purposes of this installation, the ownCloud server will run on Oracle VM VirtualBox, a free and open-source hosted hypervisor.  A Virtualbox instance will allow a simple and quick installation for demonstration purposes.  Virtualbox version 5.2.26 for OSX is available from the [Virtualbox site](https://download.virtualbox.org/virtualbox/6.0.4/VirtualBox-6.0.4-128413-OSX.dmg).
 
 ## Method
 # Installation of ownCloud server
@@ -43,7 +44,9 @@ For the purposes of this installation, the ownCloud server will run on Oracle VM
 The server has now been installed.  Proceed immediately to the next step
 
 # Setting up ownCloud server
-Start up a session in your web browser and navigate to the ip address that was set up in step 7 of the previous section.  This address will also be displayed just after the server has been installed.  i.e.
+NOTE:  The ownCloud server portal is rendered over http, not https, by default and may nbot be secure enough for a production installation.
+
+Start up a session in your web browser and navigate to the ip address that was set up in step 7 of the *Installation of ownCloud server* section.  This address will also be displayed just after the server has been installed.  i.e.
 
 ![server start](../../../../images/server_start.png)
 
@@ -52,21 +55,37 @@ You will be asked to activate your license, which will have been sent to you, by
 Click on *Upload Licence Data* and then click on *FINISH* when the "Activation Successful" message is displayed.  You will now be directed to the welcome screen.  Take note of the administrator username and password that is displayed there.  You may also be asked a couple of survey questions.  Answer them as you see fit and click finish.
 
 # Adding a user account
-1. On the main screen, click on the *Users* block.  You will be brought to the *Users* section which will list one user (Administrator)
-2. Click *Add*
-3. Enter the first name and last name of the user and the desired username.  Click *NEXT*
-4. Give the user a strong password and click *Create User*
+1. On the main screen, click on the *Users* block.  You will be brought to the *Users* section which will list one user (Administrator).
+2. Click *Add*.
+3. Enter the first name and last name of the user and the desired username.  Click *NEXT*.
+4. Give the user a strong password and click *Create User*.
 
 # Connect to ownCloud using a web browser
-In an incognito/private browser window, navigate to the ip address that was set up in step 7 of the *Installation of ownCloud server* section.  You will be presented with several options.
+1. In an incognito/private browser window, navigate to the ip address that was set up in step 7 of the *Installation of ownCloud server* section.  
 
+2. You will be presented with several options.
 ![options](../../../../images/options.png)
 
-Select *ownCloud* under *Applictions*
+3. Select *ownCloud* under *Applictions*.
 Enter the username and password that was created in the *Adding a user account* section.
 You will then be presented with your documents contained within ownCloud.  
 
 ![final screen](../../../../images/finally2.png)
 
-Installation completed.  To find out more about using ownCloud, go to our [documentation section](https://doc.owncloud.com/server/index.html)
+# Connect to ownCloud using a desktop client
+The OSX ownCloud desktop app is available from the [ownCloud downloads](https://owncloud.org/download/#owncloud-desktop-client-macos) site.  
 
+1. Download the *Testpilot cloud* version and install the app.
+
+2. Upon launching the app, you will be asked for the *Server Address* of the ownCloud server.  Enter the ip address from step 7 of the *Installation of ownCloud server* section.  Click *Next*.
+
+3. When you get a warning abou the current SSL connection, click *Trust this certificate anyway* and click *OK*.
+
+4. When prompted for username and password, enter the details of the user created in the *Adding a user account* section.
+
+5. Ensure that *Sync everything from server* is selected and click *Connect*
+
+This completes the installation of the ownCloud OSX client application.
+
+## Installation complete.
+Now that the installation has completed, you can find out more about using ownCloud by going to the [documentation section](https://doc.owncloud.com/server/index.html).
