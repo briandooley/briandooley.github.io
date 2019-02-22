@@ -13,7 +13,7 @@ ownCloud is a service that provides cloud storage, file synchronization, persona
 Architecturally, the software utilises a client-server model, where documents and other software assets are stored on servers and can be accessed through multiple client applications.  ownCloud is an ideal solution for sharing files with select users securely.
 
 ## Installed Prerequisites
-For the purposes of this installation, the ownCloud server will run on Oracle VM VirtualBox, a free and open-source hosted hypervisor.  A Virtualbox instance will allow a simple and quick installation for demonstration purposes.  Virtualbox version 5.2.26 for OSX is available from the [Virtualbox site](https://download.virtualbox.org/virtualbox/6.0.4/VirtualBox-6.0.4-128413-OSX.dmg).
+For the purposes of this installation, the ownCloud server will run on Oracle VM VirtualBox, a free and open-source hosted hypervisor.  A Virtualbox instance will allow a simple and quick installation for demonstration purposes.  Virtualbox for OSX is available from the [Virtualbox site](https://download.virtualbox.org/virtualbox/6.0.4/VirtualBox-6.0.4-128413-OSX.dmg).
 
 ## Method
 # ownCloud server Installation
