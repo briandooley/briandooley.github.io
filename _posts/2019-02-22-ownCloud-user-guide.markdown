@@ -9,10 +9,10 @@ categories:
 The purpose of this document is to guide users through the installation of ownCloud server, adding users and accessing the ownCloud server using a client application in a short timeframe.  This document is written specifically for installation on an Apple Mac running OSX High Sierra version 10.13.6 or higher.  Note that this document details an installation for demonstration purposes only.  This method must not be used for a production installation.
 
 ## What is ownCloud?
-ownCloud allows individual users and enterprise organisations to host their documents within a on-premise, secure cloud infrastructure that is entirely within the owners control.  In terms of architecture, the software utilises a client-server modal, where documents and other software assets are stored on servers and can be accessed through multiple client applications. 
+ownCloud is a system that allows individual users and enterprise organisations to host their documents within a on-premise, secure cloud infrastructure that is entirely within the owners control.  In terms of architecture, the software utilises a client-server modal, where documents and other software assets are stored on servers and can be accessed through multiple client applications.
 
 ## Installed Prerequisites
-This guide covers the installation of the ownCloud server software on a virtualbox instance as  this allows a simple and quick installation for demonstration purposes.  Virtualbox version 5.2.26 for OSX is available [here](https://download.virtualbox.org/virtualbox/6.0.4/VirtualBox-6.0.4-128413-OSX.dmg).
+For the purposes of this installation, the ownCloud server will run on Oracle VM VirtualBox, a free and open-source hosted hypervisor.  A Virtualbox instance will allow a simple and quick installation for demonstration purposes.  Virtualbox version 5.2.26 for OSX is available [here](https://download.virtualbox.org/virtualbox/6.0.4/VirtualBox-6.0.4-128413-OSX.dmg).
 
 ## Method
 # Installation of ownCloud server
@@ -66,7 +66,7 @@ Select *ownCloud* under *Applictions*
 Enter the username and password that was created in the *Adding a user account* section.
 You will then be presented with your documents contained within ownCloud.  
 
-![final screen](../../../../images/finally.png)
+![final screen](../../../../images/finally2.png)
 
 Installation completed.  To find out more about using ownCloud, go to our [documentation section](https://doc.owncloud.com/server/index.html)
 
