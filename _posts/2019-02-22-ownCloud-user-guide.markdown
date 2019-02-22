@@ -17,7 +17,7 @@ For the purposes of this installation, the ownCloud server will run on Oracle VM
 
 ## Method
 # ownCloud server Installation
-1. Obtain an image to run on virtualBoxby opening the [ownCloud downloads page](https://owncloud.com/download/) in your browser and downloading the image by clicking the "DOWNLOAD" button in the "Download ownCloud Server" section.  You will be expected to register with ownCloud at this stage in the process.  Enter your details, making sure that you submit a **valid email address** (this will be used to send your license to) and also ensure that the Download version that you select is the _ownCloud Server Appliance (VirtualBox)_ version.
+1. Obtain an image to run on virtualBox by opening the [ownCloud downloads page](https://owncloud.com/download/) in your browser and downloading the image by clicking the "DOWNLOAD" button in the "Download ownCloud Server" section.  You will be expected to register with ownCloud at this stage in the process.  Enter your details, making sure that you submit a **valid email address** (this will be used to send your license to) and also ensure that the Download version that you select is the _ownCloud Server Appliance (VirtualBox)_ version.
 
 2. When the image has downloaded, launch virtualBox and select *File* - *Import Appliance*.  Click on the folder icon and browser to select your image.  Click *Continue* to proceed to the *Appliance Settings* screen.
 
@@ -65,7 +65,7 @@ The server has now been installed.  Proceed immediately to the next step
 2. You will be presented with several options.
 ![options](../../../../images/options.png)
 
-3. Select *ownCloud* under *Applictions*.
+3. Select *ownCloud* under *Applications*.
 Enter the username and password that was created in the *Adding a user account* section.
 You will then be presented with your documents contained within ownCloud.  
 
@@ -78,7 +78,7 @@ The OSX ownCloud desktop app is available from the [ownCloud downloads](https://
 
 2. Upon launching the app, you will be asked for the *Server Address* of the ownCloud server.  Enter the ip address from step 7 of the *Installation of ownCloud server* section.  Click *Next*.
 
-3. When you get a warning abou the current SSL connection, click *Trust this certificate anyway* and click *OK*.
+3. When you get a warning about the current SSL connection, click *Trust this certificate anyway* and click *OK*.
 
 4. When prompted for username and password, enter the details of the user created in the *Adding a user account* section.
 
